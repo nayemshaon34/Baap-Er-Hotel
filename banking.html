@@ -18,17 +18,17 @@
                 <!-- deposit -->
                 <div class="bg-blue-400 p-8 rounded-2xl">
                     <h3 class="font-semibold text-3xl">Deposit</h3>
-                    <h4 class="font-semibold text-5xl">$00</h4>
+                    <h4 class="font-semibold text-5xl">$<span id="total-deposit">00</span></h4>
                 </div>
                 <!-- withdraw -->
                 <div class="bg-green-400 p-8 rounded-2xl">
                     <h3 class="font-semibold text-3xl">Withdraw</h3>
-                    <h4 class="font-semibold text-5xl">$00</h4>
+                    <h4  class="font-semibold text-5xl">$<span id="total-withdraw">00</span></h4>
                 </div>
                 <!-- balance -->
                 <div class="bg-purple-400 p-8 rounded-2xl">
                     <h3 class="font-semibold text-3xl">Balance</h3>
-                    <h4 class="font-semibold text-5xl">$1200</h4>
+                    <h4 class="font-semibold text-5xl">$<span  id="total-amount">1200</span></h4>
                 </div>
             </div>
         </section>
@@ -37,19 +37,20 @@
                 <!-- deposit -->
                 <div class="bg-red-100 p-8">
                     <h2 class="text-2xl font-medium">Please Deposit</h2>
-                    <input class="border border-blue-500 rounded px-3" type="text" placeholder="$ amount you want to deposit">
+                    <input id="deposit-amount" class="border border-blue-500 rounded px-3" type="text" placeholder="$ amount you want to deposit">
                     <br>
-                    <button class="bg-gradient-to-r from-green-400 to-blue-500 focus:from-pink-500 focus:to-yellow-500 px-3 py-2 mt-3 rounded text-white font-semibold">Deposit</button>
+                    <button id="deposit-btn" class="bg-gradient-to-r from-green-400 to-blue-500 focus:from-pink-500 focus:to-yellow-500 px-3 py-2 mt-3 rounded text-white font-semibold">Deposit</button>
                 </div>
                 <!-- withdraw -->
                 <div class="bg-yellow-100 p-8">
-                    <h2 class="text-2xl font-medium">Please Deposit</h2>
-                    <input class="border border-blue-500 rounded px-3 w-3/4" type="text " placeholder="$ amount you want to deposit">
+                    <h2 class="text-2xl font-medium">Please Withdraw</h2>
+                    <input id="withdraw-amount" class="border border-blue-500 rounded px-3 w-3/4" type="text " placeholder="$ amount you want to deposit">
                     <br>
-                    <button class="bg-gradient-to-r from-green-400 to-blue-500 focus:from-pink-500 focus:to-yellow-500 px-3 py-2 mt-3 rounded text-white font-semibold">Withdraw</button>
+                    <button id="withdraw-btn" class="bg-gradient-to-r from-green-400 to-blue-500 focus:from-pink-500 focus:to-yellow-500 px-3 py-2 mt-3 rounded text-white font-semibold">Withdraw</button>
                 </div>
             </div>
         </section>
     </main>
+    <script src="js/banking.js"></script>
 </body>
 </html>
