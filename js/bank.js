@@ -6,5 +6,6 @@ document.getElementById('info-btn').addEventListener('click',function(){
     }
     else{
         email.value = '';
+        pass.value = '';
     }
 })
